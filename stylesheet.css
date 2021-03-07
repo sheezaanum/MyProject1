@@ -1,0 +1,429 @@
+*{
+	margin: 0;padding: 0; box-sizing: border-box; 
+}
+html{
+	scroll-behavior: smooth;
+}
+:root {
+--dark-color: #264653;
+--light-color:#2a9d8f;
+--sky-blue: #55b3b1;
+--dark-blue: #09015f;
+--light-purple:#8b5e83;
+
+
+}
+html{
+	scroll-behavior: smooth!important;
+}
+.header a:hover{
+  margin:2px!important;
+  background: #264653;
+}
+.header{
+	width: 100%;
+	height: 100vh;
+	background-image: url('static/img/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.header:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .3;
+    
+    
+	background: linear-gradient(to right , #222831 0%, #222831 0%, #3b5360 100%);
+}
+.navbar:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .3;
+    z-index: -1;
+    
+	background: linear-gradient(to right , #222831 0%, #222831 0%, #3b5360 100%);
+}
+
+
+.background-section{
+    width: 100%;
+    height: 100vh;
+	color: white;
+    text-align: center;
+   
+   padding-top: 20%;
+
+}
+.center-div{
+	background: #2a9d8f!important;
+	width: 100%;
+	height: 30vh;
+	margin:auto;
+	opacity: .7;
+    transition: width 2s;
+    z-index: -1;
+}
+.center-div:hover{
+	width: 50%;
+}
+/*========= link start===*/
+.sec-light{
+	color: white!important;
+	text-align: center;
+	
+	background: var(--dark-color);
+}
+
+.sec-light .parent div:nth-child(odd){
+	background: var(--dark-color)!important;
+}
+
+.sec-light .parent div:nth-child(even){
+	background: var(--light-color) !important;
+
+}
+/* ======digital-punjab-section========*/
+.digital-punjab-section{
+	background: var(--light-color);
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+
+.digital-punjab-section h2::before{
+	content: 'before content';
+	display: block;
+	
+   background: var(--dark-color);
+   padding: 20px;
+}
+.digital-punjab-section h2::after{
+	content: 'after content';
+	display: block;
+	background-color: var(--sky-blue);
+    padding: 10px 10px!important;
+}
+/*===highlight-section===*/
+.highlight-section{
+	background: #eff7e1!important;
+}
+ .high-container-text{
+	text-align: center!important;
+	padding: 20px;
+}
+.card{
+	 border: 2px solid #EFF7E1;
+}
+.footer-cont{
+	 border: 2px solid #EFF7E1;
+}
+.heading-cont{
+	background: var(--dark-color);
+}
+.body-cont .icon{
+	display: flex;
+	justify-content: center;
+	padding-top:0;
+	margin-top: -5px;
+	
+}
+.body-cont i{
+	
+	background: var(--light-color);
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	color: white!important;
+	padding: 10px;
+
+}
+.body-cont a{
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+}
+.container1{
+	text-align: center;
+	margin:10px auto;
+}
+.btn-class{
+	background: var(--dark-color);
+	text-transform: uppercase;
+	
+
+	
+	}
+.btn-class a{
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px;
+}
+/*==========text-section4=============*/
+.text-section4{
+  background: var(--light-color);
+  height: 40vh;
+   color: white;
+   text-align: center;
+}
+.text-section4 p{
+	font-size: 17px;
+    line-height: 1.7;
+    padding: 10px 20px;
+    text-align: center;
+    
+}
+.text-section4 p:after{
+	content: 'We are roots of technoloy';
+	display: block;
+	word-spacing: 2px;
+	 padding: 40px 40px;
+	 text-transform: uppercase;
+}
+/*============back-image-sectionn5===========*/
+/*.back-image-sectionn5{
+	height: 100vh;
+  margin: 20px 0px;
+  background-image: url('static/img/background2.jpg')!important;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 400px;
+  color: white!important;
+
+}*/
+/*-===========masonry gallery with hover effects start*/
+.back-image-sectionn5{
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	min-height: 100vh;
+	background: #222;
+}
+.galleryheading{
+	background: var(--dark-color);
+	text-align: center;
+	color: #fff;
+	padding: 10px;
+}
+.container-M{
+	position: relative;
+	width: 100%!important;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+	grid-template-rows: minmax(100px,auto);
+	/*margin: 400px;*/
+	margin: 10px;
+	grid-auto-flow: dense;
+	grid-gap: 10px;
+}
+.container-M .box{
+	/*color: #333;*/
+	margin: -10px;
+	display: grid;
+	
+	/*place-items:center;*/
+	text-align: center;
+	color: #fff;
+    transition: 0.5s;
+}
+
+.container-M .box img{
+	width: 100%;
+	height: 100%;
+	
+}
+.container-M .box{
+	margin:-5px;
+	padding: 5px!important;
+
+}
+/*hhhhhhhhhh*/
+.container-M .box {
+	position: relative;
+	overflow: hidden;
+}
+.container-M .box img{
+	width: 100%;
+	transition: tranform 5s;
+}
+.container-M .box:hover .imgbox img{
+	transform: scale(1.2);
+	
+}
+.container-M .box .content{
+	position:absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	/*background: rgb(0,0,0,.8);*/
+	background: var(--dark-color);
+	opacity: .7;
+	transform: scaleY(0);
+	transition: transform 1s;
+}
+.container-M .box:hover .content{
+	transform: scaleY(1);
+}
+.container-M .box  .content{
+	position: absolute;
+	top: 50%;
+	transform: translateX(100%);
+	text-align: center;
+	color: white!important;
+}
+.container-M .box  .content h2{
+	margin: 20px;
+	padding: 10px;
+	font-size: 20px;
+	color: #ff0;
+}
+.container-M .box  .content p{
+	margin: 10px 0 0;
+	padding: 0;
+}
+/*88888888888888*/
+.container-M .box:nth-child(2){
+	grid-row: span 2!important;
+	grid-column: span 1;
+}
+
+.container-M .box:nth-child(6){
+	grid-row: span 1;
+	grid-column: span 2;
+}
+.container-M .box:nth-child(7){
+	grid-row: span 1;
+	grid-column: span 2;
+}
+/*-===========masonry gallery with hover effects end*/
+/*===========Some div gallery start*/
+.gallery-container2{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 40px auto;
+}
+.gallery-container2 .box-G-2{
+	width:300px;
+	height:250px;
+	margin: 1px 10px;
+    transition: 1s;
+}
+.gallery-container2 .box-G-2 img{
+	width: 100%;
+	height: 100%;
+}
+.gallery-container2 .box-G-2:hover{
+	transform: scale(1.5);
+	/*width: 350px;
+	height: 300px;*/
+}
+/*===========Some div gallery end*/
+/*Footer css start */
+.myfooter{
+	background: var(--dark-color);
+	color: #fff;
+	padding:20px;
+}
+.myfooter a{
+	color: #fff;
+	text-decoration: none;
+}
+.myfooter li{
+	list-style: none;
+}
+.news-input{
+	
+    border-radius: 100px;
+    outline: none;
+    color: white;
+    text-align: center;
+}
+.subscribe{
+	background: var(--light-color)!important;
+	border-radius: 100px;
+	color: #fff;
+}
+#myBtn{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	border: none;
+	color: #fff;
+	background: var(--light-color); 
+	padding: 10px;
+	border-radius: 20px;
+}
+/*==========Meedia queries ==========*/
+@media(max-width: 768px){
+	.nav-item{
+		text-align: center;
+	}
+	.form-inline{
+		
+		width: 30%;
+		margin: 150px;
+	}
+	/*high ligh section card */
+	.highlight-section{
+		/*display: grid;
+		grid-template-rows: repeat(3,1fr);
+		grid-gap: 10px;*/
+	
+		padding: 5px 60px;
+
+	}
+	/*text section4 start*/
+	.text-section4{
+  background: var(--light-color);
+  height: 60vh;
+   color: white;
+   padding:10px;
+} 
+/*text section end */
+/*gallery heading*/
+	.galleryheading{
+		margin-top: 10px;
+	}
+	/*gallery=======*/
+	.back-image-sectionn5{
+		width: 100%;
+		margin: 5px;
+		padding: 5px;
+	/*	padding-bottom: 10px;*/
+
+	}
+	.container-M{
+		display: flex;
+		/*flex-wrap: nowrap;*/
+		flex-direction: column;
+
+		
+	}
+	.box{
+		border:2px solid var(--dark-color);
+	}
+	/*===gallery-container2====*/
+	.gallery-container2{
+		display: flex;
+		/*flex-wrap: nowrap;*/
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+}
+
+
